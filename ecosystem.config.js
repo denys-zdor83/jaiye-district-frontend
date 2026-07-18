@@ -8,7 +8,7 @@ module.exports = {
       cwd: "/home/deploy/apps/jaiye_district_frontend",
       env: {
         NODE_ENV: "production",
-        PORT: 3000,
+        PORT: 3001,
       },
       instances: 1,
       autorestart: true,
