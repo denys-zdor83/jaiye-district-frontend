@@ -62,7 +62,7 @@ export function DistrictMap() {
         })}
 
         {/* Always-visible title banners at the top of each polygon */}
-        {DISTRICTS.map((d) => {
+        {DISTRICTS.map((d, i) => {
           const coords = d.points
             .split(" ")
             .map((p) => p.split(",").map(Number));
@@ -80,6 +80,8 @@ export function DistrictMap() {
               height={TITLE_HEIGHT}
               preserveAspectRatio="xMidYMid meet"
               pointerEvents="none"
+              className="animate-float"
+              style={{ animationDelay: `${i * 0.35}s` }}
             />
           );
         })}

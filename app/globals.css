@@ -127,6 +127,21 @@
   }
 }
 
+@keyframes floatY {
+  0%, 100% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+.animate-float {
+  animation: floatY 4s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
 .animate-fade-in {
   animation: fadeIn 0.5s ease-out both;
 }
