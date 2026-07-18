@@ -5,7 +5,7 @@ module.exports = {
       name: "jaiye-district-frontend",
       script: "node_modules/.bin/next",
       args: "start",
-      cwd: "/var/www/jaiye_district_frontend",
+      cwd: "/home/deploy/apps/jaiye_district_frontend",
       env: {
         NODE_ENV: "production",
         PORT: 3000,
